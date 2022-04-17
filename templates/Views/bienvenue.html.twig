@@ -1,0 +1,35 @@
+{% extends "Layouts/layoutSite.html.twig" %}
+
+{% block title %}
+    Bienvenue
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="content">
+
+
+        <h3 class="title">Bonjour et bienvenue sur le site du Club Photo de Buzançais</h3>
+
+            <p>
+                Le photo club de Buzançais est un lieu de rencontre entre photographes, passionnés de photographie et passionnés de la photographie.
+
+
+                Dans une optique conviviale, venez partager votre plaisir de l'image numérique
+                avec nous au Photo Club de BUZANCAIS. Venez nous rencontrer le mercredi
+                à : 14h00, à la Maisons des Clubs 36500 Buzançais Place de Gaulle.
+                Pour discuter de photo, échanger vos impressions et
+                pratiquer : la photo, le diaporama, le studio de prise de vue, le traitement de l'image numérique etc...
+                Créé en 1974, le Photo Club de Buzançais est situé dans l'Indre.
+            </p>
+
+
+            <p id="bienvenueText">
+                Le PHOTO CLUB de BUZANCAIS, vous accueillera, dans un cadre agréable tous les mercredi à partir de 14 heures.
+                De la composition à l'élaboration de la photo, nous serons présents pour vous piloter et vous aider dans vos créations.
+            </p>
+            <img id="photo1" src="{{ asset('pictures/photo1.jpg') }}" alt="Photo Club de Buzançais" class="img-responsive" width="400" height="200">
+
+        </div>
+    </div>
+{% endblock %}

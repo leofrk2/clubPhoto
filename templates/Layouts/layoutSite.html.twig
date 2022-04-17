@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% include "Layouts/header.html.twig" %}
+
+
+    <div class="flash">
+
+        {% for msg in app.session.flashBag.get('info') %}
+            {{ msg }}
+        {% endfor %}
+
+        {% for msg in app.session.flashBag.get('error') %}
+            {{ msg }}
+        {% endfor %}
+
+        {% for msg in app.session.flashBag.get('success') %}
+            {{ msg }}
+        {% endfor %}
+    </div>
+    {% block content %}{% endblock %}
+
+    {% include "Layouts/footer.html.twig" %}
+
+{% endblock %}
