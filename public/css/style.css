@@ -10,13 +10,15 @@ p{
     color: lightyellow;
     font-family: arial, serif;
     font-size: 18px;
-    background: #6db784;
+    background: #88C07A;
     padding: 10px;
     -webkit-border-radius: 20px;
 }
 
 .title{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    color: #FAE96A;
+    font-size: 23px;
 }
 
 .container{
@@ -57,7 +59,7 @@ p{
 .menu{
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 1200px;
     background: #91D3D1;
     z-index: 2;
 
@@ -95,10 +97,14 @@ ul li a{
     color: #ffffff;
     margin-left: 35px;
     font-size: 18px;
+    background: #9FD8C8;
+    padding: 10px;
+    -webkit-border-radius: 8px;
 }
 
 ul li a:hover{
     color: black;
+    background: #f9e45b;
 }
 
 #photo1{

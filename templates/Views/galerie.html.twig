@@ -1,0 +1,48 @@
+{% extends 'Layouts/layoutSite.html.twig' %}
+
+{% block title %}
+Galerie
+{% endblock %}
+
+{% block content %}
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <div class="container">
+        <div class="content">
+
+
+
+            <h3 class="title">Galerie</h3>
+            <div id="app">
+                Nb photo : {{ count }}
+
+                <script>
+                    let app = Vue.createApp({
+                        data: function () {
+                            return {
+                                message: 'Hello Vue!',
+                            }
+                        },
+                        methods: {
+                            changeMessage: function () {
+                                this.message = 'Hello Vue!';
+                            },
+                            countPicsInFile: function () {
+
+
+                                },
+                        },
+                        delimiters: ['{', '}']
+                    });
+                    app.mount('#app')
+
+
+                </script>
+
+
+
+            </div>
+        </div>
+    </div>
+{% endblock%}
